@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* changes the 1REM from 16px to 10px */
+	font-size: 62.5%;
+}
+
+ul {
+	padding-inline-start: 40px;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+
+	display: flex;
+	flex-wrap: wrap;
+	overflow-x: hidden;
+	background-color: #999;
+}
+
+.add {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	border: 1px solid #000;
+	font-size: 2rem;
+	padding: 1rem;
+	background-color: greenyellow;
+	color: #000;
+	cursor: pointer;
+	font-weight: bold;
+	filter: brightness(80%);
+	transition: all 0.3s ease;
+}
+
+.add:hover {
+	filter: brightness(110%);
+}
+
+.add i {
+	padding-right: 1rem;
+}
+
+.note {
+	margin: 5rem;
+	width: 30rem;
+	height: 35rem;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.34);
+}
+
+.tools {
+	display: flex;
+	justify-content: end;
+	padding: 0.2rem;
+	background-color: greenyellow;
+}
+
+.tools button {
+	cursor: pointer;
+	border: none;
+	margin: 0.5rem;
+	color: #000;
+}
+
+.tools button:first-child {
+	margin-right: 2rem;
+}
+
+.tools i {
+	font-size: 2rem;
+}
+
+.main {
+	font-size: 2rem;
+	width: 30rem;
+	height: 100%;
+	padding: 1rem;
+	word-wrap: break-word;
+}
+
+textarea {
+	outline: none;
+	border: none;
+	height: 35rem;
+	width: 100%;
+	padding: 1rem;
+	font-family: inherit;
+	font-size: 2rem;
+	color: #000;
+}
+
+.hidden {
+	display: none !important;
+}
